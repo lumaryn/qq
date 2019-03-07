@@ -1,21 +1,17 @@
-/*import java.io.*;
+import java.io.*;
 
 public class ex16 {
 
     public static void main(String[] args) {
+        String s;
 
-        try(FileReader reader = new FileReader("notes3.txt"))
-        {
-            // читаем посимвольно
-            int c;
-            while((c=reader.read())!=-1){
-
-                System.out.print((char)c);
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\admin\\Desktop\\test.txt"));
+            while ((s = br.readLine()) != null) {
+                System.out.println(s);
             }
-        }
-        catch(IOException ex){
-
-            System.out.println(ex.getMessage());
+        } catch (IOException e) {
+            System.out.println("Ошибка" + e);
         }
     }
-}*/
+}
