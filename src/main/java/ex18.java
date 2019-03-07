@@ -26,8 +26,8 @@ public class ex18 {
                 i--;
             }
 
-        } catch (IOException e) {
-            System.out.println("error");
+        } catch (IOException ex) {
+            System.out.println("error"+ex);
         }
     }
 }
